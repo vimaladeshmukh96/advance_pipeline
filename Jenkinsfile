@@ -1,14 +1,14 @@
 pipeline {
     agent {label 'node2' }
- //   parameters {
+    parameters {
 
-    //    string (name:'NAME' , description: 'enter your name')
+       string (name:'NAME' , description: 'enter your name')
 
-  //  }
-   // triggers{
-    //    cron('H/3 * * * *')
+    }
+   triggers{
+      cron('H/3 * * * *')
 
-  //  }
+    }
 
     stages {
         stage('BUILD') {
